@@ -66,6 +66,7 @@ header nav ul li a button {
 /*f78644*/
 
 header nav ul li a button:hover {
+  /*background-image: linear-gradient(to right, #e15f2c, #e9855d, #e15f2c);*/
   background-color: #e9855d;
   color: #fff;
 }
