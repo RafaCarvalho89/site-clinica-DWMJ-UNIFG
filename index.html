@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  
   <title>Animal Care</title>
 </head>
 <body>
@@ -31,7 +34,11 @@
     </section>
     <section id="about">
       <article class="content">
-        <h2>Sobre <span>Nós</span></h2>
+        <div class="title">
+          <img src="./images/title.png" alt="Logo pata" width="35px">
+          <h2>Sobre Nós</h2>
+          <img src="./images/title.png" alt="Logo pata" width="35px">
+        </div>
         <p>
           Bem-vindo à Animal Care, a sua clínica veterinária de confiança para cuidados com seus animais de estimação. Aqui, nossos profissionais altamente qualificados estão dedicados a fornecer aos seus animais de estimação o melhor atendimento possível, garantindo que eles recebam cuidados de qualidade e personalizados.
         </p>
@@ -48,8 +55,12 @@
       </article>
     </section>
     <section id="services" class="flex">
-      <article class="borda0">
-        <h2>Serviços</h2>
+      <article class="content">
+        <div class="title">
+          <img src="./images/title.png" alt="Logo pata" width="35px">
+          <h2>Nossos Serviços</h2>
+          <img src="./images/title.png" alt="Logo pata" width="35px">
+        </div>
         <p>
           Na Animal Care, oferecemos serviços completos de saúde para animais de estimação, incluindo consultas, exames, vacinas, cirurgias e tratamentos. Nossa clínica também está equipada com serviços de diagnóstico avançados, incluindo raio-x digital, ultrassonografia e laboratório próprio, para garantir um diagnóstico rápido e preciso.
         </p>
@@ -59,60 +70,208 @@
         <p>          
           Na Animal Care, também nos preocupamos com a prevenção de doenças e, por isso, oferecemos uma série de programas de saúde preventiva para ajudar a manter seus animais de estimação saudáveis e felizes. Além disso, temos um sistema de lembrete de vacinação e exames, para ajudar a garantir que seus animais de estimação estejam sempre em dia com sua saúde.
         </p>
-        LOGO ABAIXO CARDS COM DESENHOS DOS SERVIÇOS COM SEUS RESPECTIVOS NOMES (PENSEI EM CONSULTAS, FARMÁCIA PET, PETSHOP(COMPRA DE ACESSÓRIOS E RAÇÕES), CIRURGIAS, EXAMES, ATENDIMENTO EM DOMICÍLO, INTERNAMENTOS, HOTELZINHO PARA OS ANIMAIS, EVENTOS DE ADOÇÃO)
+        <div class="cards-container">
+          <div class="cards">
+            <img src="./images/images-cards/logo-consulta.png" alt="Logo de consulta" width="150px" height="150px">
+            <p>Consultas</p>
+          </div>
+          <div class="cards">
+            <img src="./images/images-cards/logo-cirurgia.png" alt="Logo de cirurgia" width="150px" height="150px">
+            <p>Cirurgias</p>
+          </div>
+          <div class="cards">
+            <img src="./images/images-cards/logo-exame.png" alt="Logo de exames" width="150px" height="150px">
+            <p>Exames</p>
+          </div>
+          <div class="cards">
+            <img src="./images/images-cards/logo-farmacia.png" alt="Logo de farmácia" width="150px" height="150px">
+            <p>Medicamentos</p>
+            <p>Farmácia Pet</p>
+          </div>
+          <div class="cards">
+            <img src="./images/images-cards/logo-emergencia.png" alt="Logo de emergência 24h" width="150px" height="150px">
+            <p>Emergência 24h</p>
+          </div>
+          <div class="cards">
+            <img src="./images/images-cards/logo-internamento-hotel.png" alt="Logo de internamento" width="150px" height="150px">
+            <p>Internamentos</p>
+          </div>
+          <div class="cards">
+            <img src="./images/images-cards/logo-domicilio.png" alt="Logo de atendimento em domicílio" width="150px" height="150px">
+            <p>Atendimento em domicílio</p>
+          </div>
+          <div class="cards">
+            <img src="./images/images-cards/logo-petshop.png" alt="Logo de petshop" width="150px" height="150px">
+            <p>Petshop</p>
+            <p>Rações e Acessórios</p>
+          </div>
+          <div class="cards">
+            <img src="./images/images-cards/logo-banho-tosa.png" alt="Logo de banho e tosa" width="150px" height="150px">
+            <p>Banho e Tosa</p>
+          </div>
+          <div class="cards">
+            <img src="./images/images-cards/logo-adocao.png" alt="Logo de eventos de adoção" width="150px" height="150px">
+            <p>Eventos de Adoção</p>
+          </div>
+        </div>
       </article>
     </section>
     <section id="galery" class="flex">
-      <article class="borda0">
-        <h2>Galeria</h2>
-        GALERIA DE FOTOS DA CLÍNICA (PENSEI NUM CAROUSEL(SLIDER) DE FOTOS QUE AO CLICAR DEIXA A IMAGEM MAIOR) - FOTOS GENÉRICAS DE INSTALAÇÕES DE CLÍNICAS VETERINÁRIAS, SALAS DE EXAMES/CIRURGIA, CONSULTÓRIOS, INTERNAMENTOS, OS VETERINÁRIOS COM OS ANIMAIS...
+      <article class="content">
+        <div class="title">
+          <img src="./images/title.png" alt="Logo pata" width="35px">
+          <h2>Galeria</h2>
+          <img src="./images/title.png" alt="Logo pata" width="35px">
+        </div>
+        <div class="carousel-container">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <div class="carousel">
+            <img id="img-1" src="./images/images-carousel/close-no-veterinario-cuidando-do-animal-de-estimacao.jpg" alt="imagem" draggable="false">
+            <img src="./images/images-carousel/close-no-veterinario-cuidando-do-cachorro-2.jpg" alt="imagem" draggable="false">
+            <img src="./images/images-carousel/close-no-veterinario-cuidando-do-cachorro.jpg" alt="imagem" draggable="false">
+            <img src="./images/images-carousel/close-no-veterinario-cuidando-do-gato.jpg" alt="imagem" draggable="false">
+            <img src="./images/images-carousel/close-up-sorridente-homem-com-cachorro-fofo.jpg" alt="imagem" draggable="false">
+            <img src="./images/images-carousel/fechar-o-medico-lambendo-o-cao.jpg" alt="imagem" draggable="false">
+            <img src="./images/images-carousel/pessoas-de-tiro-medio-com-gato-fofo.jpg" alt="imagem" draggable="false">
+            <img src="./images/images-carousel/veterinario-cuidando-de-animal-de-estimacao.jpg" alt="imagem" draggable="false">
+            <img src="./images/images-carousel/veterinario-de-tiro-medio-ajudando-gato.jpg" alt="imagem" draggable="false">
+            <img src="./images/images-carousel/veterinario-verificando-a-saude-do-filhote.jpg" alt="imagem" draggable="false">
+          </div>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
       </article>
     </section>
     <section id="statements" class="flex">
-      <article class="borda0">
-        <h2>Depoimentos</h2>
+      <article class="content">
+        <div class="title">
+          <img src="./images/title.png" alt="Logo pata" width="35px">
+          <h2>Depoimentos</h2>
+          <img src="./images/title.png" alt="Logo pata" width="35px">
+        </div>
         <p>
           Na Clínica Veterinária Animal Care, nosso objetivo é sempre fornecer o melhor atendimento possível para nossos pacientes e seus donos. Confira abaixo alguns depoimentos de clientes satisfeitos com nossos serviços:
         </p>
-        <div class="statement-card">
-          <p>
-            "Levei meu gatinho para um exame na Animal Care e fiquei impressionada com a dedicação e cuidado que recebemos. A equipe é muito atenciosa e preocupada em garantir o conforto e bem-estar dos animais. Com certeza, recomendo a Animal Care para todos que buscam um serviço de qualidade para seus pets." - Camila S.
-          </p>
-        </div>
-        <div class="statement-card">
-          <p>
-            "Minha experiência na Animal Care foi simplesmente incrível. A equipe é extremamente profissional e os médicos veterinários são altamente capacitados. Meu cachorro foi tratado com muito amor e cuidado. Recomendo a Animal Care para todos que buscam um serviço de qualidade." - Roberto C.
-          </p>
-        </div>
-        <div class="statement-card">
-          <p>
-            "Eu não poderia estar mais satisfeito com a Animal Care. A equipe é muito atenciosa e prestativa, o ambiente é limpo e organizado, e os médicos veterinários são excelentes. Meu cãozinho sempre é tratado com muito amor e respeito. Recomendo a Animal Care para todos que querem o melhor para seus animais." - Luiza A.
-          </p>
-        </div>
-        <div class="statement-card">
-          <p>
-            "Eu levei meu cachorro para a Animal Care e fiquei muito feliz com o atendimento que recebemos. A equipe é muito carinhosa e dedicada, e o ambiente é muito agradável. Meu cachorro foi tratado com muito cuidado e carinho. Com certeza, continuarei a levar meu pet para a Animal Care." - Guilherme R.
-          </p>
-        </div>
-        <div class="statement-card">
-          <p>
-            "A Animal Care é simplesmente incrível. A equipe é muito profissional e preocupada em fornecer o melhor atendimento possível para nossos pets. Meu gatinho foi tratado com muito carinho e dedicação. Com certeza, recomendo a Animal Care para todos os amantes de animais." - Ana P.
-          </p>
-        </div>
-        <div class="statement-card">
-          <p>
-            "Eu tive uma ótima experiência com a Animal Care. A equipe é muito amigável e prestativa, e os médicos veterinários são excelentes. Meu cachorro foi tratado com muito amor e respeito. A clínica é muito limpa e organizada. Recomendo a Animal Care para todos que querem o melhor para seus pets." - Carlos M.
-          </p>
-        </div>
-        <div class="statement-card">
-          <p>
-            "A Animal Care foi recomendada por um amigo e eu fiquei muito feliz com o atendimento que recebemos. A equipe é muito atenciosa e preocupada em garantir o bem-estar dos animais. Meu cachorro foi tratado com muito amor e dedicação. Recomendo a Animal Care para todos os donos de animais de estimação." - Fernanda L.
-          </p>
-        </div>
-        <div class="statement-card">
-          <p>
-            "Eu sou muito grata pelo atendimento que recebi na Animal Care. A equipe é muito profissional e os médicos veterinários são altamente capacitados. Meu cãozinho foi tratado com muito carinho e respeito. A clínica é muito limpa e organizada. Com certeza, continuarei a levar meu pet para a Animal Care." - Bruna T.
-          </p>
+        <div class="statement-container">
+          <div class="statement-card">
+            <div>
+              <img src="./images/quote-left.png" alt="Aspas" width="25px" class="left">
+              <p>
+                Levei meu gatinho para um exame na Animal Care e fiquei impressionada com a dedicação e cuidado que recebemos. A equipe é muito atenciosa e preocupada em garantir o conforto e bem-estar dos animais. Com certeza, recomendo a Animal Care para todos que buscam um serviço de qualidade para seus pets.
+              </p>
+              <img src="./images/quote-right.png" alt="Aspas" width="25px"  class="right">
+            </div>
+            <div class="avatar-area">
+              <div class="avatar">
+                <img src="./images/avatar/avatar-female.png" alt="Avatar feminino" width="50px">
+                <p>Camila S.</p>
+              </div>
+            </div>
+          </div>
+          <div class="statement-card">
+            <div>
+              <img src="./images/quote-left.png" alt="Aspas" width="25px" class="left">
+              <p>
+                Minha experiência na Animal Care foi simplesmente incrível. A equipe é extremamente profissional e os médicos veterinários são altamente capacitados. Meu cachorro foi tratado com muito amor e cuidado. Recomendo a Animal Care para todos que buscam um serviço de qualidade.
+              </p>
+              <img src="./images/quote-right.png" alt="Aspas" width="25px"  class="right">
+            </div>
+            <div class="avatar-area">
+              <div class="avatar">
+                <img src="./images/avatar/avatar-male.png" alt="Avatar feminino" width="50px">
+                <p>Roberto C.</p>
+              </div>
+            </div>
+          </div>
+          <div class="statement-card">
+            <div>
+              <img src="./images/quote-left.png" alt="Aspas" width="25px" class="left">
+              <p>
+                Eu não poderia estar mais satisfeito com a Animal Care. A equipe é muito atenciosa e prestativa, o ambiente é limpo e organizado, e os médicos veterinários são excelentes. Meu cãozinho sempre é tratado com muito amor e respeito. Recomendo a Animal Care para todos que querem o melhor para seus animais.
+              </p>
+              <img src="./images/quote-right.png" alt="Aspas" width="25px"  class="right">
+            </div>
+            <div class="avatar-area">
+              <div class="avatar">
+                <img src="./images/avatar/avatar-female.png" alt="Avatar feminino" width="50px">
+                <p>Luiza A.</p>
+              </div>
+            </div>
+          </div>
+          <div class="statement-card">
+            <div>
+              <img src="./images/quote-left.png" alt="Aspas" width="25px" class="left">
+              <p>
+                Eu levei meu cachorro para a Animal Care e fiquei muito feliz com o atendimento que recebemos. A equipe é muito carinhosa e dedicada, e o ambiente é muito agradável. Meu cachorro foi tratado com muito cuidado e carinho. Com certeza, continuarei a levar meu pet para a Animal Care.
+              </p>
+              <img src="./images/quote-right.png" alt="Aspas" width="25px"  class="right">
+            </div>
+            <div class="avatar-area">
+              <div class="avatar">
+                <img src="./images/avatar/avatar-male.png" alt="Avatar feminino" width="50px">
+                <p>Guilherme R.</p>
+              </div>
+            </div>
+          </div>
+          <div class="statement-card">
+            <div>
+              <img src="./images/quote-left.png" alt="Aspas" width="25px" class="left">
+              <p>
+                A Animal Care é simplesmente incrível. A equipe é muito profissional e preocupada em fornecer o melhor atendimento possível para nossos pets. Meu gatinho foi tratado com muito carinho e dedicação. Com certeza, recomendo a Animal Care para todos os amantes de animais. 
+              </p>
+              <img src="./images/quote-right.png" alt="Aspas" width="25px"  class="right">
+            </div>
+            <div class="avatar-area">
+              <div class="avatar">
+                <img src="./images/avatar/avatar-female.png" alt="Avatar feminino" width="50px">
+                <p>Ana P.</p>
+              </div>
+            </div>
+          </div>
+          <div class="statement-card">
+            <div>
+              <img src="./images/quote-left.png" alt="Aspas" width="25px" class="left">
+              <p>
+                Eu tive uma ótima experiência com a Animal Care. A equipe é muito amigável e prestativa, e os médicos veterinários são excelentes. Meu cachorro foi tratado com muito amor e respeito. A clínica é muito limpa e organizada. Recomendo a Animal Care para todos que querem o melhor para seus pets.
+              </p>
+              <img src="./images/quote-right.png" alt="Aspas" width="25px"  class="right">
+            </div>
+            <div class="avatar-area">
+              <div class="avatar">
+                <img src="./images/avatar/avatar-male.png" alt="Avatar feminino" width="50px">
+                <p>Carlos M.</p>
+              </div>
+            </div>
+          </div>
+          <div class="statement-card">
+            <div>
+              <img src="./images/quote-left.png" alt="Aspas" width="25px" class="left">
+              <p>
+                A Animal Care foi recomendada por um amigo e eu fiquei muito feliz com o atendimento que recebemos. A equipe é muito atenciosa e preocupada em garantir o bem-estar dos animais. Meu cachorro foi tratado com muito amor e dedicação. Recomendo a Animal Care para todos os donos de animais de estimação.
+              </p>
+              <img src="./images/quote-right.png" alt="Aspas" width="25px"  class="right">
+            </div>
+            <div class="avatar-area">
+              <div class="avatar">
+                <img src="./images/avatar/avatar-female.png" alt="Avatar feminino" width="50px">
+                <p>Fernanda L.</p>
+              </div>
+            </div>
+          </div>
+          <div class="statement-card">
+            <div class="statement-content">
+              <img src="./images/quote-left.png" alt="Aspas" width="25px" class="left">
+              <p>
+                Eu sou muito grata pelo atendimento que recebi na Animal Care. A equipe é muito profissional e os médicos veterinários são altamente capacitados. Meu cãozinho foi tratado com muito carinho e respeito. A clínica é muito limpa e organizada. Com certeza, continuarei a levar meu pet para a Animal Care.
+              </p>
+              <img src="./images/quote-right.png" alt="Aspas" width="25px"  class="right">
+            </div>
+            <div class="avatar-area">
+              <div class="avatar">
+                <img src="./images/avatar/avatar-female.png" alt="Avatar feminino" width="50px">
+                <p>Bruna T.</p>
+              </div>
+            </div>
+          </div>
         </div>
         <p>
           Esses são apenas alguns dos muitos depoimentos positivos que recebemos de nossos clientes satisfeitos. Na Animal Care, estamos sempre comprometidos em fornecer o melhor atendimento possível para nossos pacientes e seus donos. Agradecemos a confiança e a preferência de todos que escolhem.
@@ -120,114 +279,241 @@
       </article>
     </section>
     <section id="faq" class="flex">
-      <article class="borda0">
-        <h2>Perguntas Frequentes</h2>
+      <article class="content">
+        <div class="title">
+          <img src="./images/title.png" alt="Logo pata" width="35px">
+          <h2>Perguntas Frequentes</h2>
+          <img src="./images/title.png" alt="Logo pata" width="35px">
+        </div>
         <div class="faq-container">
-          <details>
-            <summary>
-              1 - Quais são os serviços oferecidos pela clínica veterinária?
-            </summary>
-            <p>
-              R: Nós oferecemos uma ampla gama de serviços, incluindo consultas, exames, cirurgias, vacinações, internação, além de serviços de grooming e banho e tosa.
-            </p>
-          </details>
-          <details>
-            <summary>
-              2 - Qual é o horário de funcionamento da clínica veterinária?
-            </summary>
-            <p>
-              R: Estamos abertos de segunda a sábado, das 9h às 18h. Oferecemos plantão emergencial para atendimento 24 horas.
-            </p>
-          </details>
-          <details>
-            <summary>
-              3 - Como faço para agendar uma consulta?
-            </summary>
-            <p>
-              R: Para agendar uma consulta, você pode nos contatar por telefone ou através do nosso site. Também é possível agendar uma consulta diretamente na clínica.
-            </p>
-          </details>
-          <details>
-            <summary>
-              4 - Quanto tempo devo aguardar pela consulta do meu animal de estimação?
-            </summary>
-            <p>
-              R: Nós sempre fazemos o possível para agendar consultas o mais rápido possível. Normalmente, você pode agendar uma consulta para o mesmo dia ou para o próximo dia útil.
-            </p>
-          </details>
-          <details>
-            <summary>
-              5 - Quais são as formas de pagamento aceitas pela clínica veterinária?
-            </summary>
-            <p>
-              R: Aceitamos pagamentos em dinheiro, cartões de crédito e débito, além de cheque e pix.
-            </p>
-          </details>
-          <details>
-            <summary>
-              6 - Vocês oferecem planos de saúde para animais?
-            </summary>
-            <p>
-              R: Sim, nós oferecemos planos de saúde para animais de estimação. Por favor, entre em contato conosco para mais informações sobre nossos planos.
-            </p>
-          </details>
-          <details>
-            <summary>
-              7 - Quais são os cuidados que devo ter antes de trazer meu animal de estimação para a consulta?
-            </summary>
-            <p>
-              R: Antes da consulta, certifique-se de que seu animal esteja em jejum, caso seja necessário para algum exame. Também é importante trazer a carteirinha de vacinação atualizada e informações médicas do seu animal, caso já tenha passado por algum outro veterinário.
-            </p>
-          </details>
-          <details>
-            <summary>
-              8 - Vocês oferecem serviços de emergência para animais de estimação?
-            </summary>
-            <p>
-              R: Sim, oferecemos serviços de emergência para animais de estimação 24 horas por dia. Em caso de emergência, por favor, entre em contato conosco imediatamente.
-            </p>
-          </details>
-          <details>
-            <summary>
-              9 - Vocês realizam atendimento domiciliar?
-            </summary>
-            <p>
-              R: Sim, realizamos atendimento domiciliar em casos em que o animal não pode ser transportado até a clínica ou em caso de emergência. Por favor, entre em contato conosco para agendar um atendimento domiciliar.
-            </p>
-          </details>
-          <details>
-            <summary>
-              10 - Qual é a política de cancelamento de consultas?
-            </summary>
-            <p>
-              R: Pedimos que nos contate com pelo menos 24 horas de antecedência em caso de cancelamento de consulta para que possamos reagendar o horário e atender outros clientes. Caso o cancelamento seja feito com menos de 24 horas de antecedência, será cobrada uma taxa de cancelamento.
-            </p>
-          </details>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <p>
+                1 - Quais são os serviços oferecidos pela clínica veterinária?
+              </p>
+              <div >
+                <p class="accordion-icon">+</p>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <p>
+                R: Nós oferecemos uma ampla gama de serviços, incluindo consultas, exames, cirurgias, vacinações, internação, além de serviços de grooming e banho e tosa.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <p>
+                2 - Qual é o horário de funcionamento da clínica veterinária?
+              </p>
+              <div >
+                <p class="accordion-icon">+</p>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <p>
+                R: Estamos abertos de segunda a sábado, das 9h às 18h. Oferecemos plantão emergencial para atendimento 24 horas.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <p>
+                3 - Como faço para agendar uma consulta?
+              </p>
+              <div >
+                <p class="accordion-icon">+</p>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <p>
+                R: Para agendar uma consulta, você pode nos contatar por telefone ou através do nosso site. Também é possível agendar uma consulta diretamente na clínica.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <p>
+                4 - Quanto tempo devo aguardar pela consulta do meu animal de estimação?
+              </p>
+              <div >
+                <p class="accordion-icon">+</p>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <p>
+                R: Nós sempre fazemos o possível para agendar consultas o mais rápido possível. Normalmente, você pode agendar uma consulta para o mesmo dia ou para o próximo dia útil.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <p>
+                5 - Quais são as formas de pagamento aceitas pela clínica veterinária?
+              </p>
+              <div >
+                <p class="accordion-icon">+</p>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <p>
+                R: Aceitamos pagamentos em dinheiro, cartões de crédito e débito, além de cheque e pix.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <p>
+                6 - Vocês oferecem planos de saúde para animais?
+              </p>
+              <div >
+                <p class="accordion-icon">+</p>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <p>
+                R: Sim, nós oferecemos planos de saúde para animais de estimação. Por favor, entre em contato conosco para mais informações sobre nossos planos.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <p>
+                7 - Quais são os cuidados que devo ter antes de trazer meu animal de estimação para a consulta?
+              </p>
+              <div >
+                <p class="accordion-icon">+</p>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <p>
+                R: Antes da consulta, certifique-se de que seu animal esteja em jejum, caso seja necessário para algum exame. Também é importante trazer a carteirinha de vacinação atualizada e informações médicas do seu animal, caso já tenha passado por algum outro veterinário.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <p>
+                8 - Vocês oferecem serviços de emergência para animais de estimação?
+              </p>
+              <div >
+                <p class="accordion-icon">+</p>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <p>
+                R: Sim, oferecemos serviços de emergência para animais de estimação 24 horas por dia. Em caso de emergência, por favor, entre em contato conosco imediatamente.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <p>
+                9 - Vocês realizam atendimento domiciliar?
+              </p>
+              <div >
+                <p class="accordion-icon">+</p>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <p>
+                R: Sim, realizamos atendimento domiciliar em casos em que o animal não pode ser transportado até a clínica ou em caso de emergência. Por favor, entre em contato conosco para agendar um atendimento domiciliar.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <p>
+                10 - Qual é a política de cancelamento de consultas?
+              </p>
+              <div >
+                <p class="accordion-icon">+</p>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <p>
+                R: Pedimos que nos contate com pelo menos 24 horas de antecedência em caso de cancelamento de consulta para que possamos reagendar o horário e atender outros clientes. Caso o cancelamento seja feito com menos de 24 horas de antecedência, será cobrada uma taxa de cancelamento.
+              </p>
+            </div>
+          </div>
         </div>
       </article>
     </section>
-    <section id="contact" class="flex">
-      <article class="borda0">
-        <h2>Contato</h2>
-        INFORMAÇOES DE CONTATO (ENDEREÇO, TELEFONE E REDES SOCIAS)
+    <section id="contact" class="contact">
+      <article class="contact-info">
+        <div class="title">
+          <img src="./images/title.png" alt="Logo pata" width="35px">
+          <h2>Contato</h2>
+          <img src="./images/title.png" alt="Logo pata" width="35px">
+        </div>
+        <div class="contact-content">
+          <h3>Endereço</h3>
+          <p>Rua Comendador José Didier, 27 - Piedade, Jaboatão dos Guararapes - PE</p>
+        </div>
+        <div class="contact-content">
+          <h3>Telefone</h3>
+          <p>(81) 99999-9999</p>
+        </div>
+        <div class="contact-content">
+          <h3>Horário de Atendimento</h3>
+          <p>Consultas</p>
+          <p>Segunda - Quinta: 9:00 -19:30</p>
+          <p>Sexta: 9:00 - 18:30</p>
+          <p>Sábados e Domingos: 11:00 - 18:00</p>
+          <p>Emergência - 24h</p>
+        </div>
+        <div class="contact-content">
+          <h3>E-mail</h3>
+          <p>animalcareoficial@gmail.com</p>
+        </div>
+        <div class="contact-content">
+          <h3>Redes Sociais</h3>
+          <div class="social-logos">
+            <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="http://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="http://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://web.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
       </article>
-      <article class="borda0">
+      <article class="contact-form">
         <h3>Envie uma mensagem</h3>
-        FORMULÁRIO PARA ENVIO DE MENSAGEM PARA CLÍNICA
+        <form>
+          <div>
+            <label for="name">Insira seu nome: </label>
+            <input type="text" id="name">
+          </div>
+          <br>
+          <div>
+            <label for="email">Insira seu email: </label>
+            <input type="email" name="email" id="email">
+          </div>
+          <br>
+          <div>
+            <label for="mensage">Escreva sua mensagem: </label>
+            <textarea name="mensage" id="mensage" cols="30" rows="10"></textarea>
+          </div>
+          <br>
+          <div>
+          </div>
+        </form>
       </article>
-      <article class="borda0">
+      <article class="contact-map">
         <h3>Mapa</h3>
-        MAPA INDICANDO A LOCALIZAÇÃO NA CLÍNICA (PENSEI EM COLOCAR O ENDEREÇO DA UNIFG)
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2298.0109564666664!2d-34.9182400530388!3d-8.161796918376886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aae1c863cba5ab%3A0x26e74e8331cd4a59!2sRua%20Comendador%20Jos%C3%A9%20Didier%2C%2027%20-%20Piedade%2C%20Jaboat%C3%A3o%20dos%20Guararapes%20-%20PE%2C%2054400-160!5e0!3m2!1spt-BR!2sbr!4v1681513846109!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </article>
     </section>
   </main>
   <footer>
     <div class="socialMedia-logos">
-      <a href="#">logo facebook</a>
-      <a href="#">logo instagram</a>
-      <a href="#">logo youtube</a>
-      <a href="#">logo tik tok</a>
-      <a href="#">logo whatsapp</a>
+      <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="http://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="http://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://web.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
     <div class="footer-info">
       <p>Animal Care</p>
@@ -235,8 +521,8 @@
       <p>Copyright 2023 &copy; Todos os direitos reservados à Animal Care</p>
       <p><a href="#">TERMOS</a>&#09;<a href="#">PRIVACIDADE</a></p>
     </div>
-    <div>
-      <p>Voltar para o topo</p>
+    <div class="home-button">
+      <a href="#home"><i id="up" class="fa-solid fa-angle-up"></i></a>
     </div>
   </footer>
   <script src="./scripts/scripts.js"></script>
