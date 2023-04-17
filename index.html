@@ -7,28 +7,42 @@
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  
+  <script src="https://unpkg.com/scrollreveal"></script>
   <title>Animal Care</title>
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="nav-bar">
       <div>
-        <img src="./images/logo-nav.png" alt="Logo da clínica">
+        <a href="#home"><img class="logo-nav" src="./images/logo-nav.png" alt="Logo da clínica"></a>
       </div>
-      <div>
+      <div class="nav-links">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">Sobre Nós</a></li>
-          <li><a href="#services">Serviços</a></li>
-          <li><a href="#galery">Galeria</a></li>
-          <li><a href="#statements">Depoimentos</a></li>
-          <li><a href="#faq">Perguntas Frequentes</a></li>
-          <li><a href="#contact"><button>Contato</button></a></li>
+          <li><a class="menu-link" href="#home">Home</a></li>
+          <li><a class="menu-link" href="#about">Sobre Nós</a></li>
+          <li><a class="menu-link" href="#services">Serviços</a></li>
+          <li><a class="menu-link" href="#galery">Galeria</a></li>
+          <li><a class="menu-link" href="#statements">Depoimentos</a></li>
+          <li><a class="menu-link" href="#faq">Perguntas Frequentes</a></li>
+          <li><a class="menu-link" href="#contact"><button>Contato</button></a></li>
         </ul>
+      </div>
+      <div class="menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="./images/menu_white_36dp.svg"></button>
       </div>
     </nav>
   </header>
+  <div class="mobile-menu">
+    <ul>
+      <li><a class="menu-link" href="#home">Home</a></li>
+      <li><a class="menu-link" href="#about">Sobre Nós</a></li>
+      <li><a class="menu-link" href="#services">Serviços</a></li>
+      <li><a class="menu-link" href="#galery">Galeria</a></li>
+      <li><a class="menu-link" href="#statements">Depoimentos</a></li>
+      <li><a class="menu-link" href="#faq">Perguntas Frequentes</a></li>
+      <li><a class="menu-link" href="#contact"><button>Contato</button></a></li>
+    </ul>
+  </div>
   <main>
     <section class="parallax parallax-1" id="home">
     </section>
@@ -50,8 +64,10 @@
         </p>     
       </article>
       <article class="content">
-        <h3></h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DeWGFESQWGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="video-card">
+          <h3>Vídeo institucional</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DeWGFESQWGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
+        </div>
       </article>
     </section>
     <section id="services" class="flex">
@@ -123,21 +139,21 @@
           <h2>Galeria</h2>
           <img src="./images/title.png" alt="Logo pata" width="35px">
         </div>
-        <div class="carousel-container">
-          <i id="left" class="fa-solid fa-angle-left"></i>
-          <div class="carousel">
-            <img id="img-1" src="./images/images-carousel/close-no-veterinario-cuidando-do-animal-de-estimacao.jpg" alt="imagem" draggable="false">
-            <img src="./images/images-carousel/close-no-veterinario-cuidando-do-cachorro-2.jpg" alt="imagem" draggable="false">
-            <img src="./images/images-carousel/close-no-veterinario-cuidando-do-cachorro.jpg" alt="imagem" draggable="false">
-            <img src="./images/images-carousel/close-no-veterinario-cuidando-do-gato.jpg" alt="imagem" draggable="false">
-            <img src="./images/images-carousel/close-up-sorridente-homem-com-cachorro-fofo.jpg" alt="imagem" draggable="false">
-            <img src="./images/images-carousel/fechar-o-medico-lambendo-o-cao.jpg" alt="imagem" draggable="false">
-            <img src="./images/images-carousel/pessoas-de-tiro-medio-com-gato-fofo.jpg" alt="imagem" draggable="false">
-            <img src="./images/images-carousel/veterinario-cuidando-de-animal-de-estimacao.jpg" alt="imagem" draggable="false">
-            <img src="./images/images-carousel/veterinario-de-tiro-medio-ajudando-gato.jpg" alt="imagem" draggable="false">
-            <img src="./images/images-carousel/veterinario-verificando-a-saude-do-filhote.jpg" alt="imagem" draggable="false">
+        <div class="container-slider">
+          <button id="prev-btn"><i id="left" class="fa-solid fa-angle-left"></i></button>
+          <div class="container-images">
+            <img class="slider on" src="./images/images-carousel/close-no-veterinario-cuidando-do-animal-de-estimacao.jpg" alt="imagem">
+            <img class="slider" src="./images/images-carousel/close-no-veterinario-cuidando-do-cachorro-2.jpg" alt="imagem">
+            <img class="slider" src="./images/images-carousel/close-no-veterinario-cuidando-do-cachorro.jpg" alt="imagem">
+            <img class="slider" src="./images/images-carousel/close-no-veterinario-cuidando-do-gato.jpg" alt="imagem">
+            <img class="slider" src="./images/images-carousel/close-up-sorridente-homem-com-cachorro-fofo.jpg" alt="imagem">
+            <img class="slider" src="./images/images-carousel/fechar-o-medico-lambendo-o-cao.jpg" alt="imagem">
+            <img class="slider" src="./images/images-carousel/pessoas-de-tiro-medio-com-gato-fofo.jpg" alt="imagem">
+            <img class="slider" src="./images/images-carousel/veterinario-cuidando-de-animal-de-estimacao.jpg" alt="imagem">
+            <img class="slider" src="./images/images-carousel/veterinario-de-tiro-medio-ajudando-gato.jpg" alt="imagem">
+            <img class="slider" src="./images/images-carousel/veterinario-verificando-a-saude-do-filhote.jpg" alt="imagem">
           </div>
-          <i id="right" class="fa-solid fa-angle-right"></i>
+          <button id="next-btn"><i id="right" class="fa-solid fa-angle-right"></i></button>
         </div>
       </article>
     </section>
@@ -456,11 +472,15 @@
         </div>
         <div class="contact-content">
           <h3>Horário de Atendimento</h3>
-          <p>Consultas</p>
-          <p>Segunda - Quinta: 9:00 -19:30</p>
-          <p>Sexta: 9:00 - 18:30</p>
-          <p>Sábados e Domingos: 11:00 - 18:00</p>
-          <p>Emergência - 24h</p>
+          <div class="schedule-container">
+            <p>Consultas</p>
+            <p>Segunda - Quinta: 9:00 -19:30</p>
+            <p>Sexta: 9:00 - 18:30</p>
+            <p>Sábados e Domingos: 11:00 - 18:00</p>
+          </div>
+          <div class="schedule-container">
+            <p>Emergência - 24h</p>
+          </div>
         </div>
         <div class="contact-content">
           <h3>E-mail</h3>
@@ -478,24 +498,25 @@
         </div>
       </article>
       <article class="contact-form">
-        <h3>Envie uma mensagem</h3>
-        <form>
-          <div>
-            <label for="name">Insira seu nome: </label>
-            <input type="text" id="name">
+        <h3>Envie-nos sua mensagem</h3>
+        <form class="form-container">
+          <div class="input-style">
+            <label for="name">Nome: </label>
+            <input type="text" id="name" placeholder="Digite o seu nome...">
+          </div>
+          <br>
+          <div class="input-style">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Digite o seu email...">
+          </div>
+          <br>
+          <div class="input-style">
+            <label for="mensage">Mensagem: </label>
+            <textarea name="mensage" id="mensage" cols="30" rows="10" placeholder="Digite a sua mensagem..."></textarea>
           </div>
           <br>
           <div>
-            <label for="email">Insira seu email: </label>
-            <input type="email" name="email" id="email">
-          </div>
-          <br>
-          <div>
-            <label for="mensage">Escreva sua mensagem: </label>
-            <textarea name="mensage" id="mensage" cols="30" rows="10"></textarea>
-          </div>
-          <br>
-          <div>
+            <input type="submit" value="Enviar">
           </div>
         </form>
       </article>
